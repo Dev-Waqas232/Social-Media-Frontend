@@ -1,3 +1,10 @@
+import { Route, Routes } from "react-router";
+import Feed from "./pages/Feed";
+
 export default function App() {
-  return <div>Hello World</div>;
+  return (
+    <Routes>
+      <Route path="/" element={<Feed />} />
+    </Routes>
+  );
 }
